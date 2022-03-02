@@ -1,0 +1,24 @@
+import { extendTheme } from '@chakra-ui/react'
+import "@fontsource/outfit"
+import "@fontsource/open-sans"
+
+const theme = extendTheme({
+   fonts: {
+      body: 'Outfit, Open Sans, sans-serif'
+   },
+   colors: {
+      primary: "#C84B31",
+      secondary: "#2D4263",
+      background: "#191919"
+   },
+   styles: {
+      global:{
+         body:{
+            bg:"#191919",
+            color:"white"
+         }
+      }
+   }
+})
+
+export default theme
