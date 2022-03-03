@@ -11,7 +11,6 @@ function Profile() {
          </VStack>
          <About></About>
       </VStack>
-
    </Center>
 }
 export default Profile

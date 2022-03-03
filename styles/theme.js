@@ -9,6 +9,7 @@ const theme = extendTheme({
    colors: {
       primary: "#C84B31",
       secondary: "#2D4263",
+      gray:"#52627B",
       background: "#191919"
    },
    styles: {

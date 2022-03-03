@@ -6,7 +6,6 @@ function Layout({ children }) {
          <Container maxW='container.md' pt={6} >
          <Nav></Nav>
          </Container>
-         
          <Container mt={8}>
             <main>
                {children}

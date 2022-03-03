@@ -48,9 +48,10 @@ function Nav() {
                <Menu >
                   <MenuButton
                      as={IconButton}
-                     aria-label='Options'
                      icon={<ChevronDownIcon />}
                      size="sm"
+                     color="white"
+                     variant='outline'
                   />
                   <MenuList>
                      <MenuItem >
