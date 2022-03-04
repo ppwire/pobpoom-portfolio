@@ -54,9 +54,11 @@ function Nav() {
                      variant='outline'
                   />
                   <MenuList>
-                     <MenuItem >
-                        Work  
-                     </MenuItem>
+                     <Link href="/work">
+                        <MenuItem >
+                           Work
+                        </MenuItem>
+                     </Link>
                   </MenuList>
                </Menu>
             </Box>

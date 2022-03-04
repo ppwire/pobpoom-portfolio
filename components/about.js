@@ -1,4 +1,4 @@
-import { Text, Box, VStack, Button } from '@chakra-ui/react'
+import { Text, Link, VStack, Button } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 function About() {
    return (
@@ -7,7 +7,7 @@ function About() {
             Hi! I'm Poom Muangthai. I'm currently working as a full stack freelance developer.
             Mostly thing that I work on is Node, Vue and React.
          </Text>
-         <Button bg="primary" rightIcon={<ChevronRightIcon />} colorScheme="red">
+         <Button as={Link} href="https://docs.google.com/document/d/1rqtkpJWKlk8ksRUuLhszJFgZd441fWpu/edit?usp=sharing&ouid=114866621988823577924&rtpof=true&sd=true" bg="primary" rightIcon={<ChevronRightIcon />} colorScheme="red">
             Resume
          </Button>
       </VStack>

@@ -2,12 +2,12 @@ import Profile from '../components/profile'
 import Article from '../components/article'
 import ArticleItem from '../components/article_item'
 import ArticleItems from '../components/article_items'
-import { Stack, Flex, Spacer, Box } from '@chakra-ui/react'
+import { Stack } from '@chakra-ui/react'
 import educationData from './api/education.json'
 import experiencesData from './api/experiences.json'
 import hobbiesData from './api/hobbies.json'
 import skillsData from './api/skills.json'
-import Skills from '../components/article_items'
+import Contact from '../components/contact'
 
 export default function Home() {
 
@@ -54,7 +54,7 @@ export default function Home() {
             }
           </Stack>
         </Article>
-
+            <Contact></Contact>
       </Stack>
     </main>
   )

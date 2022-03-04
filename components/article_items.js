@@ -1,4 +1,4 @@
-import { Text ,Stack} from '@chakra-ui/react'
+import { Text, Stack } from '@chakra-ui/react'
 function ArticleItems({ title, item, align }) {
    return (
       <Stack spacing={1} align={align}>
