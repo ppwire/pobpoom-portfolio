@@ -2,13 +2,14 @@ import Profile from '../components/profile'
 import Article from '../components/article'
 import ArticleItem from '../components/article_item'
 import ArticleItems from '../components/article_items'
-import { Stack } from '@chakra-ui/react'
+import { Stack, Button, Flex } from '@chakra-ui/react'
 import educationData from './api/education.json'
 import experiencesData from './api/experiences.json'
 import hobbiesData from './api/hobbies.json'
 import skillsData from './api/skills.json'
 import Contact from '../components/contact'
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
 
@@ -61,6 +62,11 @@ export default function Home() {
               }
             </Stack>
           </Article>
+          <Flex justify={{ base: "start", md: "center" }}>
+            <Link href="/works">
+              <Button variant='outline'>Wanna see my works ?</Button>
+            </Link>
+          </Flex>
           <Contact></Contact>
         </Stack>
       </main>
