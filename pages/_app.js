@@ -7,11 +7,7 @@ import '../styles/styles.css'
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
-      <Head>
-        <title>Pobpoom | Main</title>
-        <meta name="main" content="My information main page" />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
+     
       <Layout >
         <Component {...pageProps} />
       </Layout>

@@ -8,54 +8,62 @@ import experiencesData from './api/experiences.json'
 import hobbiesData from './api/hobbies.json'
 import skillsData from './api/skills.json'
 import Contact from '../components/contact'
+import Head from 'next/head'
 
 export default function Home() {
 
   return (
-    <main >
-      <Stack spacing={8}>
-        <Profile></Profile>
+    <>
+      <Head>
+        <title>Pobpoom | Main</title>
+        <meta name="main" content="My information main page" />
+        <link rel="icon" href="/favicon.svg" />
+      </Head>
+      <main >
+        <Stack spacing={8}>
+          <Profile></Profile>
 
-        <Article title="Education" align={{ base: "start", md: "center" }}>
-          <Stack >
-            {
-              educationData.map((el, key) => {
-                return <ArticleItem title={el.title} description={el.description} date={el.date} align={{ base: "start", md: "center" }} key={key}></ArticleItem>
-              })
-            }
-          </Stack>
-        </Article>
+          <Article title="Education" align={{ base: "start", md: "center" }}>
+            <Stack >
+              {
+                educationData.map((el, key) => {
+                  return <ArticleItem {...el} align={{ base: "start", md: "center" }} key={key}></ArticleItem>
+                })
+              }
+            </Stack>
+          </Article>
 
-        <Article title="Experiences" align={{ base: "start", md: "center" }}>
-          <Stack >
-            {
-              experiencesData.map((el, key) => {
-                return <ArticleItem title={el.title} description={el.description} date={el.date} align={{ base: "start", md: "center" }} key={key}></ArticleItem>
-              })
-            }
-          </Stack>
-        </Article>
+          <Article title="Experiences" align={{ base: "start", md: "center" }}>
+            <Stack >
+              {
+                experiencesData.map((el, key) => {
+                  return <ArticleItem {...el} align={{ base: "start", md: "center" }} key={key}></ArticleItem>
+                })
+              }
+            </Stack>
+          </Article>
 
-        <Article title="Skills" align={{ base: "start", md: "center" }}>
-          <Stack justify="space-between" direction={{ base: "column", md: "row" }} spacing={2}>
-            {
-              skillsData.map((el, key) => {
-                return <ArticleItems title={el.title} item={el.item} key={key} align={{ base: "start" }}></ArticleItems>
-              })
-            }
-          </Stack>
-        </Article>
-        <Article title="Hobbies" align={{ base: "start", md: "center" }} >
-          <Stack >
-            {
-              hobbiesData.map((el, key) => {
-                return <ArticleItem title={el.title} description={el.description} date={el.date} align={{ base: "start" }} key={key}></ArticleItem>
-              })
-            }
-          </Stack>
-        </Article>
-            <Contact></Contact>
-      </Stack>
-    </main>
+          <Article title="Skills" align={{ base: "start", md: "center" }}>
+            <Stack justify="space-between" direction={{ base: "column", md: "row" }} spacing={2}>
+              {
+                skillsData.map((el, key) => {
+                  return <ArticleItems {...el} key={key} align={{ base: "start" }}></ArticleItems>
+                })
+              }
+            </Stack>
+          </Article>
+          <Article title="Hobbies" align={{ base: "start", md: "center" }} >
+            <Stack >
+              {
+                hobbiesData.map((el, key) => {
+                  return <ArticleItem {...el} align={{ base: "start" }} key={key}></ArticleItem>
+                })
+              }
+            </Stack>
+          </Article>
+          <Contact></Contact>
+        </Stack>
+      </main>
+    </>
   )
 }

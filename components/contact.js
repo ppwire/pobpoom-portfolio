@@ -4,10 +4,10 @@ function Contact() {
    return (
       <Flex justify="center" align={{ base: "start", md: "center" }} direction="column">
          <Button as={Link} href="https://github.com/ppwire" leftIcon={<Icon as={SiGithub} />} color='primary' variant='link'>
-            @ppwire
+            ppwire
          </Button >
          <Button leftIcon={<Icon as={SiGmail} />} color='primary' variant='link'>
-            @poom.mth
+            poom.mth
          </Button >
       </Flex>
    )

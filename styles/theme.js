@@ -9,14 +9,18 @@ const theme = extendTheme({
    colors: {
       primary: "#C84B31",
       secondary: "#2D4263",
-      gray:"#52627B",
-      background: "#191919"
+      gray: "#52627B",
+      background: "#191919",
+      Vue: "#3eaf7c",
+      Express: "#454545",
+      React: "#61DAFB",
+      NestJS: "#EA2845"
    },
    styles: {
-      global:{
-         body:{
-            bg:"#191919",
-            color:"white"
+      global: {
+         body: {
+            bg: "#191919",
+            color: "white"
          }
       }
    }

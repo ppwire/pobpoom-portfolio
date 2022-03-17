@@ -8,7 +8,7 @@ function ArticleItem({ title, description, date, align }) {
          <Text opacity="0.8">
             {description}
          </Text>
-         <Text color="primary" fontWeight="bold">
+         <Text color="primary" fontWeight="light">
             {date}
          </Text>
       </Stack>

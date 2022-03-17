@@ -36,9 +36,9 @@ function Nav() {
             <Spacer />
 
             <Box display={{ base: "none", md: "inline-block" }}>
-               <Link href="/work">
+               <Link href="/works">
                   <Button colorScheme='white' variant='link'>
-                     Work
+                     Works
                   </Button>
                </Link>
 
@@ -54,7 +54,7 @@ function Nav() {
                      variant='outline'
                   />
                   <MenuList>
-                     <Link href="/work">
+                     <Link href="/works">
                         <MenuItem >
                            Work
                         </MenuItem>
