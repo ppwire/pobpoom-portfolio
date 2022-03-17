@@ -1,4 +1,4 @@
-import { Flex, Icon, Button, Link  } from '@chakra-ui/react'
+import { Flex, Icon, Button, Link } from '@chakra-ui/react'
 import { SiGithub, SiGmail } from "react-icons/si";
 function Contact() {
    return (
@@ -7,7 +7,7 @@ function Contact() {
             ppwire
          </Button >
          <Button leftIcon={<Icon as={SiGmail} />} color='primary' variant='link'>
-            poom.mth
+            poom.mth@gmail.com
          </Button >
       </Flex>
    )
