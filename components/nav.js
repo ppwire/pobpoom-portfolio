@@ -27,16 +27,16 @@ function Nav() {
    return (
       <nav>
          <Flex align="center">
-            <Link href="/">
+            <Link href="/" passHref>
                <Logo>
-                  <Image src="/logo.svg" mr={2}></Image>
+                  <Image src="/logo.svg" mr={2} alt="Pobpoom logo"></Image>
                   <Text fontSize="1rem" color="white" fontWeight="700">Pobpoom</Text>
                </Logo>
             </Link>
             <Spacer />
 
             <Box display={{ base: "none", md: "inline-block" }}>
-               <Link href="/works">
+               <Link href="/works" passHref>
                   <Button colorScheme='white' variant='link'>
                      Works
                   </Button>
@@ -54,7 +54,7 @@ function Nav() {
                      variant='outline'
                   />
                   <MenuList>
-                     <Link href="/works">
+                     <Link href="/works" passHref>
                         <MenuItem >
                            Work
                         </MenuItem>

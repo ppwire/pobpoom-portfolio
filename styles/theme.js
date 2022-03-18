@@ -14,7 +14,8 @@ const theme = extendTheme({
       Vue: "#3eaf7c",
       Express: "#454545",
       React: "#61DAFB",
-      NestJS: "#EA2845"
+      NestJS: "#EA2845",
+      NextJS: "#0070f3"
    },
    styles: {
       global: {

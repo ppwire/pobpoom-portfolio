@@ -4,7 +4,7 @@ function Custom404() {
    return (
       <VStack>
          <Text >404 Page not found :(</Text>
-         <Link href="/">
+         <Link href="/" passHref>
             <Button>Go Back</Button>
          </Link>
       </VStack>

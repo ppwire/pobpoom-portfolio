@@ -24,7 +24,7 @@ function Work() {
             }
          </Stack>
          <Flex justify={{ base: "start", md: "center" }}>
-            <Link href="/">
+            <Link href="/" passHref>
                <Button variant='outline'>Back to my bio</Button>
             </Link>
          </Flex>

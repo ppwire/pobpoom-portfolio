@@ -63,7 +63,7 @@ export default function Home() {
             </Stack>
           </Article>
           <Flex justify={{ base: "start", md: "center" }}>
-            <Link href="/works">
+            <Link href="/works" passHref>
               <Button variant='outline'>Wanna see my works ?</Button>
             </Link>
           </Flex>

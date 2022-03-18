@@ -3,7 +3,7 @@ import About from './about'
 function Profile() {
    return <Center>
       <VStack spacing={4}>
-         <Image src="/profile.png" borderRadius='full'
+         <Image src="/profile.png" borderRadius='full' alt="Poom  Muangthai"
          ></Image>
          <VStack spacing={1}>
             <Text fontWeight="bold" fontSize="2rem" fontFamily="Open Sans">Poom Muangthai</Text>
