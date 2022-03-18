@@ -16,6 +16,14 @@
     "imgUrl": "https://i.imgur.com/V0EvhwN.png"
   },
   {
+    "title": "Portfolio version 2",
+    "description": "The latest portfolio site that I created by NextJS, Decorated with ChakraUI.",
+    "techniques": ["NextJS"],
+    "repoUrl": "https://github.com/ppwire/pobpoom-portfolio",
+    "siteUrl": "https://pobpoom-portfolio.vercel.app/",
+    "imgUrl": "https://i.imgur.com/zxL9tTy.png"
+  },
+  {
     "title": "Tenzies game",
     "description": "Side project from scrimba online course, A simple mini puzzle game. Created by React",
     "techniques": ["React"],
